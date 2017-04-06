@@ -23,13 +23,19 @@
         $(document).ready(function() {
 
             $("#login").validate({
-
+                rules: {
+                    inputUserName: "required",
+                    inputPassword: "required"
+                },
+                messages: {
+                    inputUserName: "Please fill in your NUS ID",
+                    inputPassword: "Please enter in the correct password"
+                }
             });
 
             $("#submitBtn").click(function() {
-                $("#login").valid();
-
-                window.location.href = "index.html"
+                $('#login').valid();
+                window.location.href = 'index.html'
             });
         });
     </script>
@@ -40,7 +46,7 @@
                 <h1>SoC Printer</h1>
             </div>
             <div class="col-lg-12 col-sm-12 col-md-12" style="background-color: #e3e3e3; color: #000000;">
-                <form id="login" name="login" data-toggle="validator" role="form">
+                <form id="login" name="login">
                     <div class="form-group">
                         <label for="inputUserName" class="control-label">NUS ID</label>
                         <input type="text" class="form-control" id="inputUserName" placeholder="Your NUS ID" required>
@@ -48,12 +54,11 @@
                     <div class="form-group">
                         <label for="inputPassword" class="control-label">Password</label>
                         <input type="password" class="form-control" id="inputPassword" placeholder="Your Password" data-error="Error! Incorrect Password" required>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                    <div class="form-group">
-                        <button id="submitBtn" type="submit" class="btn btn-primary">Log In</button>
                     </div>
                 </form>
+                <div>
+                    <input id="submitBtn" name="submitBtn" type="button" value="Log In">
+                </div>
             </div>
         </div>
     </div>
