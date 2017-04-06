@@ -1,7 +1,11 @@
-<div class="demo-droppable">
-  <p>Drag files here or click to upload</p>
-</div>
 <div class="output"></div>
+<div class="drop-files">
+  <div>
+    <img src="./assets/cloud-computing.png" height="100px"/>
+  </div>
+  <button type="button" class="btn btn-primary">Choose file to upload</button>
+  <p>or drag and drop here</p>
+</div>
 <script type="text/javascript">
   (function(window) {
     function triggerCallback(e, callback) {
@@ -53,15 +57,16 @@
     window.makeDroppable = makeDroppable;
   })(this);
   (function(window) {
-    makeDroppable(window.document.querySelector('.demo-droppable'), function(files) {
+    makeDroppable(window.document.querySelector('.drop-files'), function(files) {
+      $('.upload-complete').prop('disabled', false);
       console.log(files);
       var output = document.querySelector('.output');
       output.innerHTML = '';
       for(var i=0; i<files.length; i++) {
-        if(files[i].type.indexOf('image/') === 0) {
-          output.innerHTML += '<img width="200" src="' + URL.createObjectURL(files[i]) + '" />';
-        }
-        output.innerHTML += '<p>'+files[i].name+'</p>';
+        // if(files[i].type.indexOf('image/') === 0) {
+        //   output.innerHTML += '<img width="200" src="' + URL.createObjectURL(files[i]) + '" />';
+        // }
+        output.innerHTML += '<img src="./assets/pdf.png" height="23px" style="margin-right: 5px;"/>'+files[i].name;
       }
     });
   })(this);
