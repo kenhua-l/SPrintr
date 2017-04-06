@@ -169,3 +169,45 @@ span.round-tab:hover {
   margin: 2%;
   margin-top: -2.5%;
 }
+
+#printer {
+  margin-top: 2.5%;
+}
+
+.print-panel {
+  text-align: center;
+}
+
+.level-one-printer {
+  margin-bottom: 2.5%;
+}
+
+.basement-printer {
+  margin-top: 2.5%;
+}
+
+.printer-card {
+  padding: 15px;
+}
+
+.printer-card {
+  padding: 15px;
+}
+
+.printer-card-success {
+  border-style: dashed;
+  border-radius: 4px;
+  border-color: #5cb85c;
+}
+
+.printer-card-warning {
+  border-style: dashed;
+  border-radius: 4px;
+  border-color: #f0ad4e;
+}
+
+.printer-card-danger {
+  border-style: dashed;
+  border-radius: 4px;
+  border-color: #d9534f;
+}
