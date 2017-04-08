@@ -379,22 +379,22 @@ input:checked + .slider:before {
 }
 
 .range-slider {
-  margin: 60px 0 0 0%;
+  /*margin: 60px 0 0 0%;*/
 }
 
 .range-slider {
-  width: 100%;
+  width: 80%;
 }
 
 .range-slider__range {
   -webkit-appearance: none;
   width: calc(100% - (73px));
-  height: 10px;
+  height: 13px;
   border-radius: 5px;
   background: #d7dcdf;
   outline: none;
   padding: 0;
-  margin: 0;
+  margin-left: -15px;
 }
 .range-slider__range::-webkit-slider-thumb {
   -webkit-appearance: none;
