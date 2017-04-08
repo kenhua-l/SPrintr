@@ -59,12 +59,11 @@
                     </div>
 
                     <div class="tab-pane" role="tabpanel" id="step2">
-                        <h3>Step 2</h3>
-                        <p>This is step 2</p>
-                        <ul class="list-inline pull-right">
-                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                        </ul>
+                      <div id="printConfigurations"></div>
+                      <div class="row">
+                        <button type="button" class="btn btn-default prev-step">Previous</button>
+                        <button type="button" class="btn btn-primary next-step">Save and continue</button>
+                      </div>
                     </div>
 
                     <div class="tab-pane" role="tabpanel" id="step3">
@@ -120,22 +119,26 @@
   });
 
   function nextTab(elem) {
-  $(elem).next().find('a[data-toggle="tab"]').click();
-  }
+    $(elem).next().find('a[data-toggle="tab"]').click();
+  };
   function prevTab(elem) {
-  $(elem).prev().find('a[data-toggle="tab"]').click();
-  }
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+  };
 
   $(function(){
-  $("#upload").load("upload.html");
+    $("#upload").load("upload.html");
   });
 
   $(function(){
-  $("#printer").load("printer.html");
+    $("#printConfigurations").load("printConfigurations.html");
   });
 
   $(function(){
-  $("#viewPrintJobs").load("viewPrintJobs.html");
+    $("#printer").load("printer.html");
+  });
+
+  $(function(){
+    $("#viewPrintJobs").load("viewPrintJobs.html");
   });
 
   $('.psts').on('click', function() {
