@@ -1,9 +1,9 @@
 body {
-  background-color: #303742;
+  background-color: #353F4F;
 }
 
 .navbar-default {
-  background-color: #303742;
+  background-color: #353F4F;
   border: none;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 .login-background {
-  background: #303742;
+  background: #353F4F;
 }
 
 .login_box{
@@ -126,7 +126,7 @@ body {
 
 .wizard {
     margin: 20px auto;
-    background: #303742;
+    background: #353F4F;
 }
 
 .wizard .nav-tabs {
