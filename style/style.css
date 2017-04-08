@@ -431,18 +431,18 @@ input:checked + .slider:before {
 }
 
 .range-slider__value {
-  display: inline-block;
-  position: relative;
-  width: 60px;
   color: #fff;
   line-height: 20px;
-  text-align: center;
   border-radius: 3px;
   background: #2c3e50;
-  padding: 5px 10px;
-  margin-left: 8px;
+
+  text-align: center;
+  display: block;
+  margin:5px 30%;
+  padding: 5px 0px;
+  width: 20%;
 }
-.range-slider__value:after {
+/*.range-slider__value:after {
   position: absolute;
   top: 8px;
   left: -7px;
@@ -452,7 +452,7 @@ input:checked + .slider:before {
   border-right: 7px solid #2c3e50;
   border-bottom: 7px solid transparent;
   content: '';
-}
+}*/
 
 ::-moz-range-track {
   background: #d7dcdf;
