@@ -5,14 +5,18 @@ body {
 .navbar-default {
   background-color: #4E93E3;
   border: none;
+  padding-top: 10px;
 }
 
 .navbar-default .navbar-brand {
   color: #FCFDFC;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navbar-default .navbar-nav li a {
   color: #FCFDFC;
+  margin: 0px 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .login-background {
