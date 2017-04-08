@@ -48,7 +48,7 @@
 /*
  * Card component
  */
-.card {
+.login-card {
   max-width: 500px;
   background-color: #FFFFFF;
   /* just in case there no content*/
@@ -311,4 +311,9 @@ span.round-tab:hover {
   border-style: dashed;
   border-radius: 4px;
   border-color: #d9534f;
+}
+
+.re-login {
+  margin-top: 20%;
+  text-align: center;
 }
