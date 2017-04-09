@@ -124,6 +124,11 @@ body {
   box-sizing: border-box;
 }
 
+.form-control {
+  width: 80%;
+  margin-left: 17px;
+}
+
 .wizard {
   max-width: 1000px;
   margin: auto;
@@ -501,6 +506,7 @@ input::-moz-focus-outer {
   margin-right: 0px;
 }
 
+/* CSS for print configuratons*/
 .btn-group {
   background-color: white;
   margin-bottom: 10px;
@@ -512,11 +518,11 @@ input::-moz-focus-outer {
   border: 2px solid black;
   padding: 3px 15px;
   border-radius: 20px;
-  margin-right: 6px;
+  margin-right: 2px;
   z-index: 1;
 }
 
-.btn-background {
+.page-btn-background-one {
   position: absolute;
   background-color: red;
   width: 46px;
@@ -524,7 +530,64 @@ input::-moz-focus-outer {
   border-radius: 20px;
   top: 2px;
   left: 2px;
+  transition: 300ms ease-in-out;
 }
+
+.page-btn-background-two {
+  position: absolute;
+  background-color: red;
+  width: 124px;
+  height: 26px;
+  border-radius: 20px;
+  top: 2px;
+  left: 57px;
+  transition: 300ms ease-in-out;
+}
+
+.orientation-btn-background-one {
+  position: absolute;
+  background-color: red;
+  width: 75px;
+  height: 26px;
+  border-radius: 20px;
+  top: 2px;
+  left: 2px;
+  transition: 300ms ease-in-out;
+}
+
+.orientation-btn-background-two {
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 26px;
+  border-radius: 20px;
+  top: 2px;
+  left: 86px;
+  transition: 300ms ease-in-out;
+}
+
+.flipOn-btn-background-one {
+  position: absolute;
+  background-color: red;
+  width: 98px;
+  height: 26px;
+  border-radius: 20px;
+  top: 2px;
+  left: 2px;
+  transition: 300ms ease-in-out;
+}
+
+.flipOn-btn-background-two {
+  position: absolute;
+  background-color: red;
+  width: 101px;
+  height: 26px;
+  border-radius: 20px;
+  top: 2px;
+  left: 109px;
+  transition: 300ms ease-in-out;
+}
+
 
 .pagesPerSheet {
   margin: 10px 0px;

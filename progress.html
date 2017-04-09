@@ -86,10 +86,8 @@
 
     //Wizard
     $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-      console.log("click");
       var $target = $(e.target);
       if($target.parent().hasClass('disabled')) {
-        console.log('disabled');
         return false;
       }
     });

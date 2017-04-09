@@ -6,9 +6,9 @@
         <label for="page" class="col-sm-3">Page</label>
         <div class="col-sm-9">
           <div class="btn-group">
-            <a href="#" class="btn-one">All</a>
-            <a href="#" class="btn-two">Custom Range</a>
-            <div class="btn-background"></div>
+            <a href="#" class="btn-one page-btn-one">All</a>
+            <a href="#" class="btn-two page-btn-two">Custom Range</a>
+            <div class="page-btn-background-one"></div>
           </div>
         </div>
       </div>
@@ -18,9 +18,9 @@
         <label for="orientation" class="col-sm-3">Orientation</label>
         <div class="col-sm-9">
           <div class="btn-group">
-            <a href="#" class="btn-one">Portrait</a>
-            <a href="#" class="btn-two">Landscape</a>
-            <div class="btn-background"></div>
+            <a href="#" class="btn-one orientation-btn-one">Portrait</a>
+            <a href="#" class="btn-two orientation-btn-two">Landscape</a>
+            <div class="orientation-btn-background-two"></div>
           </div>
         </div>
       </div>
@@ -41,9 +41,9 @@
         <label for="flipOn" class="col-sm-3">Flip On</label>
         <div class="col-sm-9">
           <div class="btn-group">
-            <a href="#" class="btn-one">Long Edge</a>
-            <a href="#" class="btn-two">Short Edge</a>
-            <div class="btn-background"></div>
+            <a href="#" class="btn-one flipOn-btn-one">Long Edge</a>
+            <a href="#" class="btn-two flipOn-btn-two">Short Edge</a>
+            <div class="flipOn-btn-background-two"></div>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@
       <div class="form-group pagesPerSheet">
         <div>
           <label for="pagesPerSheet" class="col-sm-3">Pages per sheet</label>
-          <div class="col-sm-8">
+          <div class="col-sm-9">
             <div class="range-slider">
               <input class="range-slider__range" type="range" value="1" min="1" max="9">
               <span class="range-slider__value">1</span>
@@ -64,7 +64,7 @@
       <!-- Number of copies -->
       <div class="form-group">
         <label for="numberofCopies" class="col-sm-3">Number of copies</label>
-        <div class="col-sm-8" style="margin-left: -15px; padding-right: 15%;">
+        <div class="col-sm-9" style="margin-left: -15px; padding-right: 15%;">
           <input type="number" class="form-control" id="numberofCopies" value='1'>
         </div>
       </div>
@@ -77,18 +77,6 @@
 </div>
 
 <script>
-  $('input:checkbox[name=doubleSided]').change(function() {
-    displayPrintPreview();
-  });
-
-  $('input:radio[name=orientation]').change(function() {
-    displayPrintPreview();
-  });
-
-  $('input:radio[name=flipOn]').change(function() {
-    displayPrintPreview();
-  });
-
   function displayPrintPreview() {
     var orientation = $('input[name="orientation"]:checked').attr('id');
     // console.log("orientation:", orientation);
@@ -140,6 +128,54 @@
       });
     });
   };
+
+  $('input:checkbox[name=doubleSided]').change(function() {
+    displayPrintPreview();
+  });
+
+  $('input:radio[name=orientation]').change(function() {
+    displayPrintPreview();
+  });
+
+  $('input:radio[name=flipOn]').change(function() {
+    displayPrintPreview();
+  });
+
+  // JQuery to be able to toggle the print configuration buttons
+  $('.page-btn-one').on('click', function() {
+    console.log('click button one');
+    $('.page-btn-background-two').removeClass('page-btn-background-two').addClass('page-btn-background-one');
+  });
+
+  $('.page-btn-two').on('click', function() {
+    console.log('click button two');
+    $('.page-btn-background-one').removeClass('page-btn-background-one').addClass('page-btn-background-two');
+  });
+
+  $('.orientation-btn-one').on('click', function() {
+    console.log('click button one');
+    $('.orientation-btn-background-two').removeClass('orientation-btn-background-two').addClass('orientation-btn-background-one');
+  });
+
+  $('.orientation-btn-two').on('click', function() {
+    console.log('click button two');
+    $('.orientation-btn-background-one').removeClass('orientation-btn-background-one').addClass('orientation-btn-background-two');
+  });
+
+  $('.flipOn-btn-one').on('click', function() {
+    console.log('click button one');
+    $('.flipOn-btn-background-two').removeClass('flipOn-btn-background-two').addClass('flipOn-btn-background-one');
+  });
+
+  $('.flipOn-btn-two').on('click', function() {
+    console.log('click button two');
+    $('.flipOn-btn-background-one').removeClass('flipOn-btn-background-one').addClass('flipOn-btn-background-two');
+  });
+
+  $('.psts').on('click', function() {
+    $('.print-btn').prop('disabled', false);
+  })
+
 
   rangeSlider();
 </script>
