@@ -20,6 +20,16 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.navbar-default .navbar-nav li span {
+  display: block;
+  width: calc(100% - 65px);
+  height: 1px;
+  background: #FCFCFD;
+  position: absolute;
+  left: 33px;
+  top: 40px
+}
+
 .login-background {
   background: #4E93E3;
 }
