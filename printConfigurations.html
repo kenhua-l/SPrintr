@@ -132,14 +132,24 @@
   $('input:checkbox[name=doubleSided]').change(function() {
     doubleSided = $('input[name="doubleSided"]:checked').val();
     if (doubleSided == undefined) {
-      if (flipOn == 'longEdge') {
-        $('.flipOn-btn-background-one').removeClass('flipOn-btn-background-one').addClass('double-sided-disabled-one');
+      $('.flipOn-btn-one').addClass('button-gray');
+      $('.flipOn-btn-two').addClass('button-gray');
+      $('.flipOn-btn-background-one').hide();
+      $('.flipOn-btn-background-two').hide();
+    }
+    else
+    {
+      if( $('.flipOn-btn-background-one').size() == 1) {
+        $('.flipOn-btn-one').removeClass('button-gray');
+        $('.flipOn-btn-background-one').show();
+        console.log("one");
       } else {
-        $('.flipOn-btn-background-two').removeClass('flipOn-btn-background-two').addClass('double-sided-disabled-one');
+        $('.flipOn-btn-two').removeClass('button-gray');
+        $('.flipOn-btn-background-two').show();
+        console.log("two");
       }
-      flipOn = 'longEdge';
-    } else {
-      $('.double-sided-disabled-one').removeClass('double-sided-disabled-one').addClass('flipOn-btn-background-one');
+      // $('.flipOn-btn-one').removeClass('button-gray');
+      // $('.flipOn-btn-background-one').show();
     }
     displayPrintPreview();
   });
