@@ -453,11 +453,11 @@ span.round-tab:hover {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #337ab7;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #337ab7;
 }
 
 input:checked + .slider:before {
@@ -569,7 +569,7 @@ input::-moz-focus-outer {
 }
 
 .btn-group a {
-  color: #353F4F;
+  color: #FCFCFD;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -580,9 +580,17 @@ input::-moz-focus-outer {
   z-index: 1;
 }
 
+
+.btn-group .button-gray {
+  background-color: #CCC;
+  transition: 300ms ease-in-out;
+  opacity: 0.2;
+  color: #353F4F;
+}
+
 .page-btn-background-one {
   position: absolute;
-  background-color: #ec3853;
+  background-color: #337ab7;
   width: 47px;
   height: 26px;
   border-radius: 20px;
@@ -593,7 +601,7 @@ input::-moz-focus-outer {
 
 .page-btn-background-two {
   position: absolute;
-  background-color: #ec3853;
+  background-color: #337ab7;
   width: 128px;
   height: 26px;
   border-radius: 20px;
@@ -604,7 +612,7 @@ input::-moz-focus-outer {
 
 .orientation-btn-background-one {
   position: absolute;
-  background-color: #ec3853;
+  background-color: #337ab7;
   width: 77px;
   height: 26px;
   border-radius: 20px;
@@ -615,7 +623,7 @@ input::-moz-focus-outer {
 
 .orientation-btn-background-two {
   position: absolute;
-  background-color: #ec3853;
+  background-color: #337ab7;
   width: 104px;
   height: 26px;
   border-radius: 20px;
@@ -637,7 +645,7 @@ input::-moz-focus-outer {
 
 .flipOn-btn-background-one {
   position: absolute;
-  background-color: #ec3853;
+  background-color: #337ab7;
   width: 101px;
   height: 26px;
   border-radius: 20px;
@@ -648,7 +656,7 @@ input::-moz-focus-outer {
 
 .flipOn-btn-background-two {
   position: absolute;
-  background-color: #ec3853;
+  background-color: #337ab7;
   width: 104px;
   height: 26px;
   border-radius: 20px;

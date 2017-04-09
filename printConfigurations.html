@@ -7,7 +7,7 @@
         <div class="col-sm-9">
           <div class="btn-group">
             <a class="btn-one page-btn-one">All</a>
-            <a class="btn-two page-btn-two">Custom Range</a>
+            <a class="btn-two page-btn-two button-gray">Custom Range</a>
             <div class="page-btn-background-one"></div>
           </div>
         </div>
@@ -19,7 +19,7 @@
         <div class="col-sm-9">
           <div class="btn-group">
             <a class="btn-one orientation-btn-one">Portrait</a>
-            <a class="btn-two orientation-btn-two">Landscape</a>
+            <a class="btn-two orientation-btn-two button-gray">Landscape</a>
             <div class="orientation-btn-background-one"></div>
           </div>
         </div>
@@ -42,7 +42,7 @@
         <div class="col-sm-9">
           <div class="btn-group">
             <a class="btn-one flipOn-btn-one">Long Edge</a>
-            <a class="btn-two flipOn-btn-two">Short Edge</a>
+            <a class="btn-two flipOn-btn-two button-gray">Short Edge</a>
             <div class="flipOn-btn-background-one"></div>
           </div>
         </div>
@@ -146,24 +146,32 @@
 
   // JQuery to be able to toggle the print configuration buttons
   $('.page-btn-one').on('click', function() {
+    $('.page-btn-two').addClass('button-gray');
+    $('.page-btn-one').removeClass('button-gray');
     $('.page-btn-background-two').removeClass('page-btn-background-two').addClass('page-btn-background-one');
     page = "all";
     displayPrintPreview();
   });
 
   $('.page-btn-two').on('click', function() {
+    $('.page-btn-one').addClass('button-gray');
+    $('.page-btn-two').removeClass('button-gray');
     $('.page-btn-background-one').removeClass('page-btn-background-one').addClass('page-btn-background-two');
     page = "custom";
     displayPrintPreview();
   });
 
   $('.orientation-btn-one').on('click', function() {
+    $('.orientation-btn-two').addClass('button-gray');
+    $('.orientation-btn-one').removeClass('button-gray');
     $('.orientation-btn-background-two').removeClass('orientation-btn-background-two').addClass('orientation-btn-background-one');
     orientation = "portrait";
     displayPrintPreview();
   });
 
   $('.orientation-btn-two').on('click', function() {
+    $('.orientation-btn-one').addClass('button-gray');
+    $('.orientation-btn-two').removeClass('button-gray');
     $('.orientation-btn-background-one').removeClass('orientation-btn-background-one').addClass('orientation-btn-background-two');
     orientation = "landscape";
     displayPrintPreview()
@@ -173,6 +181,8 @@
     if (doubleSided == undefined) {
       console.log('Not Clickable. Double Sided is off');
     } else {
+      $('.flipOn-btn-two').addClass('button-gray');
+      $('.flipOn-btn-one').removeClass('button-gray');
       $('.flipOn-btn-background-two').removeClass('flipOn-btn-background-two').addClass('flipOn-btn-background-one');
       flipOn = "longEdge";
       displayPrintPreview();
@@ -183,6 +193,8 @@
     if(doubleSided == undefined) {
       console.log('Not Clickable. Double Sided is off');
     } else {
+      $('.flipOn-btn-one').addClass('button-gray');
+      $('.flipOn-btn-two').removeClass('button-gray');
       $('.flipOn-btn-background-one').removeClass('flipOn-btn-background-one').addClass('flipOn-btn-background-two');
       flipOn = "shortEdge";
       displayPrintPreview();
