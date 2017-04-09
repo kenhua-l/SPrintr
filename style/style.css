@@ -670,32 +670,31 @@ input::-moz-focus-outer {
 }
 
 .print-btn {
-  color: #353F4F;
-  background-color: #7C8C9A;
+  /*color: #353F4F;*/
+  /*background-color: #7C8C9A;*/
   width: 120px;
   height: 40px;
-  border-radius: 30px;
-  border: 2px solid #353F4F;
+  /*border-radius: 30px;
+  border: 2px solid #353F4F;*/
 }
 
 .prev-step {
   margin: 0px auto 20px auto;
   display: inline-block;
-  color: #353F4F;
-  background-color: #00bfff;
+  /*color: #353F4F;*/
+  /*background-color: #00bfff;*/
   width: 80px;
   height: 40px;
-  border-radius: 5px;
-  border: 2px solid #353F4F;
+  /*border-radius: 5px;
+  border: 2px solid #353F4F;*/
 }
 
 .next-step {
   margin: 0px auto 20px auto;
   display: inline-block;
-  color: #353F4F;
-  background-color: #00bfff;
+  /*color: #353F4F;*/
   width: 80px;
   height: 40px;
-  border-radius: 5px;
-  border: 2px solid #353F4F;
+  /*border-radius: 5px;
+  border: 2px solid #353F4F;*/
 }
