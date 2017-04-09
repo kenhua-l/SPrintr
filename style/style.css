@@ -344,7 +344,7 @@ span.round-tab:hover {
   background-color: #3A4352;
   color: #E1DEE2;
   margin: 0px auto;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 
 .printer-card p {
@@ -357,6 +357,18 @@ span.round-tab:hover {
   max-width: 100px;
   margin: 0px auto;
   padding-top: 30px;
+}
+
+.printer-card-success {
+  border: 7px solid green;
+}
+
+.printer-card-warning {
+  border: 7px solid orange;
+}
+
+.printer-card-danger {
+  border: 7px solid red;
 }
 
 .re-login {
