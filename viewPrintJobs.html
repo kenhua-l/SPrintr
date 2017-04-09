@@ -30,7 +30,9 @@
 
 <script>
     $(function() {
-        $("#navbar").load("navbar.html");
+      $("#navbar").load("navbar.html", function() {
+        console.log($('#myNavbar ul li:nth-child(2)').find('span').addClass('active-span'));
+      });
     });
     $(function() {
         $("#printJobsTable").load("printJobsTable.html");

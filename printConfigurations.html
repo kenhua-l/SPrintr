@@ -83,10 +83,10 @@
   var doubleSided = $('input[name="doubleSided"]:checked').val();
 
   function displayPrintPreview() {
-    console.log("doubleSided:", doubleSided);
-    console.log("Page: ", page);
-    console.log("Orientation: ", orientation);
-    console.log("Flip On: ", flipOn);
+    // console.log("doubleSided:", doubleSided);
+    // console.log("Page: ", page);
+    // console.log("Orientation: ", orientation);
+    // console.log("Flip On: ", flipOn);
 
     if (doubleSided == undefined) {
       if (orientation == "portrait") {
@@ -179,7 +179,7 @@
 
   $('.flipOn-btn-one').on('click', function() {
     if (doubleSided == undefined) {
-      console.log('Not Clickable. Double Sided is off');
+      // console.log('Not Clickable. Double Sided is off');
     } else {
       $('.flipOn-btn-two').addClass('button-gray');
       $('.flipOn-btn-one').removeClass('button-gray');
@@ -191,7 +191,7 @@
 
   $('.flipOn-btn-two').on('click', function() {
     if(doubleSided == undefined) {
-      console.log('Not Clickable. Double Sided is off');
+      // console.log('Not Clickable. Double Sided is off');
     } else {
       $('.flipOn-btn-one').addClass('button-gray');
       $('.flipOn-btn-two').removeClass('button-gray');
