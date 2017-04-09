@@ -253,30 +253,29 @@ span.round-tab:hover {
 }
 
 @media( max-width : 585px ) {
+  .wizard {
+      width: 90%;
+      height: auto !important;
+  }
 
-    .wizard {
-        width: 90%;
-        height: auto !important;
-    }
+  span.round-tab {
+      font-size: 16px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+  }
 
-    span.round-tab {
-        font-size: 16px;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-    }
+  .wizard .nav-tabs > li a {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+  }
 
-    .wizard .nav-tabs > li a {
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-    }
-
-    .wizard li.active:after {
-        content: " ";
-        position: absolute;
-        left: 35%;
-    }
+  .wizard li.active:after {
+      content: " ";
+      position: absolute;
+      left: 35%;
+  }
 }
 
 .drop-files {
@@ -319,38 +318,29 @@ span.round-tab:hover {
   text-align: center;
 }
 
-.level-one-printer {
-  margin-bottom: 2.5%;
+.printer-area {
+  font-size: 30px;
+  padding: 0px 50px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.basement-printer {
-  margin-top: 2.5%;
+.printer-card-container {
+  padding: 0px 18px;
+  margin: 0px 0px 20px 0px;
 }
 
 .printer-card {
-  padding: 15px;
+  max-width: 250px;
+  height: 200px;
+  background-color: #3A4352;
+  color: #E1DEE2;
+  margin: 0px auto;
 }
 
-.printer-card {
-  padding: 15px;
-}
-
-.printer-card-success {
-  border-style: dashed;
-  border-radius: 4px;
-  border-color: #5cb85c;
-}
-
-.printer-card-warning {
-  border-style: dashed;
-  border-radius: 4px;
-  border-color: #f0ad4e;
-}
-
-.printer-card-danger {
-  border-style: dashed;
-  border-radius: 4px;
-  border-color: #d9534f;
+.printer-card img {
+  max-width: 100px;
+  margin: 0px auto;
+  padding-top: 30px;
 }
 
 .re-login {
@@ -508,11 +498,11 @@ input::-moz-focus-outer {
 
 /* CSS for print configuratons*/
 .btn-group {
-  background-color: white;
   margin-bottom: 10px;
 }
 
 .btn-group a {
+  background-color:
   color: #353F4F;
   text-decoration: none;
   position: relative;
@@ -589,7 +579,6 @@ input::-moz-focus-outer {
   left: 109px;
   transition: 300ms ease-in-out;
 }
-
 
 .pagesPerSheet {
   margin: 10px 0px;
