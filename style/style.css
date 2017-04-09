@@ -315,12 +315,15 @@ span.round-tab:hover {
 }
 
 .print-preview {
-  max-width: 200px;
+  max-width: 450px;
+  max-height: 329px;
   margin: auto;
+  margin-top: 10px;
 }
 
 .print-preview-border {
   border: 3px solid #353F4F;
+  min-height: 375px;
 }
 
 .buttons-panel {
