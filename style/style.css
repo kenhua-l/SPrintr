@@ -649,11 +649,11 @@ input::-moz-focus-outer {
 .flipOn-btn-background-two {
   position: absolute;
   background-color: #ec3853;
-  width: 105px;
+  width: 104px;
   height: 26px;
   border-radius: 20px;
   top: 2px;
-  left: 109px;
+  left: 110px;
   transition: 300ms ease-in-out;
 }
 
