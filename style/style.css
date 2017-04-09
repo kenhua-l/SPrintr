@@ -510,7 +510,6 @@ input::-moz-focus-outer {
 }
 
 .btn-group a {
-  background-color:
   color: #353F4F;
   text-decoration: none;
   position: relative;
@@ -598,4 +597,13 @@ input::-moz-focus-outer {
 
 .form-group label {
   padding-top: 4px;
+}
+
+.print-btn {
+  color: #353F4F;
+  background-color: #7C8C9A;
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid #353F4F;
 }
