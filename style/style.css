@@ -585,6 +585,17 @@ input::-moz-focus-outer {
   transition: 300ms ease-in-out;
 }
 
+.double-sided-disabled-one {
+  position: absolute;
+  background-color: grey;
+  width: 98px;
+  height: 26px;
+  border-radius: 20px;
+  top: 2px;
+  left: 2px;
+  transition: 300ms ease-in-out;
+}
+
 .flipOn-btn-background-one {
   position: absolute;
   background-color: #ec3853;
