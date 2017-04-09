@@ -583,7 +583,7 @@ input::-moz-focus-outer {
 .page-btn-background-one {
   position: absolute;
   background-color: #ec3853;
-  width: 46px;
+  width: 47px;
   height: 26px;
   border-radius: 20px;
   top: 2px;
@@ -594,7 +594,7 @@ input::-moz-focus-outer {
 .page-btn-background-two {
   position: absolute;
   background-color: #ec3853;
-  width: 124px;
+  width: 128px;
   height: 26px;
   border-radius: 20px;
   top: 2px;
@@ -605,7 +605,7 @@ input::-moz-focus-outer {
 .orientation-btn-background-one {
   position: absolute;
   background-color: #ec3853;
-  width: 76px;
+  width: 77px;
   height: 26px;
   border-radius: 20px;
   top: 2px;
@@ -616,7 +616,7 @@ input::-moz-focus-outer {
 .orientation-btn-background-two {
   position: absolute;
   background-color: #ec3853;
-  width: 101px;
+  width: 104px;
   height: 26px;
   border-radius: 20px;
   top: 2px;
@@ -627,7 +627,7 @@ input::-moz-focus-outer {
 .double-sided-disabled-one {
   position: absolute;
   background-color: grey;
-  width: 98px;
+  width: 101px;
   height: 26px;
   border-radius: 20px;
   top: 2px;
@@ -638,7 +638,7 @@ input::-moz-focus-outer {
 .flipOn-btn-background-one {
   position: absolute;
   background-color: #ec3853;
-  width: 98px;
+  width: 101px;
   height: 26px;
   border-radius: 20px;
   top: 2px;
@@ -649,7 +649,7 @@ input::-moz-focus-outer {
 .flipOn-btn-background-two {
   position: absolute;
   background-color: #ec3853;
-  width: 101px;
+  width: 105px;
   height: 26px;
   border-radius: 20px;
   top: 2px;
