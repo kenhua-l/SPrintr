@@ -240,7 +240,7 @@ span.round-tab:hover {
 
 .wizard .tab-pane {
     position: relative;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .wizard h3 {
@@ -302,13 +302,12 @@ span.round-tab:hover {
 }
 
 .print-preview {
-  max-width: 280px;
+  max-width: 200px;
   margin: auto;
 }
 
 .print-preview-border {
   border: 3px solid black;
-  padding: 50px 0px;
 }
 
 .print-panel {
@@ -416,11 +415,8 @@ input:checked + .slider:before {
 }
 
 .range-slider {
-  /*margin: 60px 0 0 0%;*/
-}
-
-.range-slider {
   width: 80%;
+  margin-top: 10px;
 }
 
 .range-slider__range {
@@ -431,7 +427,6 @@ input:checked + .slider:before {
   background: #d7dcdf;
   outline: none;
   padding: 0;
-  margin-left: -15px;
 }
 .range-slider__range::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -499,4 +494,46 @@ input:checked + .slider:before {
 input::-moz-focus-inner,
 input::-moz-focus-outer {
   border: 0;
+}
+
+.tab-pane .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.btn-group {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.btn-group a {
+  position: relative;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 3px 15px;
+  border-radius: 20px;
+  margin-right: 6px;
+  z-index: 1;
+}
+
+.btn-background {
+  position: absolute;
+  background-color: red;
+  width: 46px;
+  height: 26px;
+  border-radius: 20px;
+  top: 2px;
+  left: 2px;
+}
+
+.pagesPerSheet {
+  margin: 10px 0px;
+}
+
+.checkbox {
+  margin-top: 6px;
+}
+
+.form-group label {
+  padding-top: 4px;
 }
