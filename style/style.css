@@ -312,7 +312,7 @@ span.round-tab:hover {
 }
 
 .print-preview-border {
-  border: 3px solid black;
+  border: 3px solid #353F4F;
 }
 
 .print-panel {
@@ -513,9 +513,11 @@ input::-moz-focus-outer {
 }
 
 .btn-group a {
+  color: #353F4F;
+  text-decoration: none;
   position: relative;
   display: inline-block;
-  border: 2px solid black;
+  border: 2px solid #353F4F;
   padding: 3px 15px;
   border-radius: 20px;
   margin-right: 2px;
@@ -524,7 +526,7 @@ input::-moz-focus-outer {
 
 .page-btn-background-one {
   position: absolute;
-  background-color: red;
+  background-color: #ec3853;
   width: 46px;
   height: 26px;
   border-radius: 20px;
@@ -535,7 +537,7 @@ input::-moz-focus-outer {
 
 .page-btn-background-two {
   position: absolute;
-  background-color: red;
+  background-color: #ec3853;
   width: 124px;
   height: 26px;
   border-radius: 20px;
@@ -546,7 +548,7 @@ input::-moz-focus-outer {
 
 .orientation-btn-background-one {
   position: absolute;
-  background-color: red;
+  background-color: #ec3853;
   width: 75px;
   height: 26px;
   border-radius: 20px;
@@ -557,7 +559,7 @@ input::-moz-focus-outer {
 
 .orientation-btn-background-two {
   position: absolute;
-  background-color: red;
+  background-color: #ec3853;
   width: 100px;
   height: 26px;
   border-radius: 20px;
@@ -568,7 +570,7 @@ input::-moz-focus-outer {
 
 .flipOn-btn-background-one {
   position: absolute;
-  background-color: red;
+  background-color: #ec3853;
   width: 98px;
   height: 26px;
   border-radius: 20px;
@@ -579,7 +581,7 @@ input::-moz-focus-outer {
 
 .flipOn-btn-background-two {
   position: absolute;
-  background-color: red;
+  background-color: #ec3853;
   width: 101px;
   height: 26px;
   border-radius: 20px;
