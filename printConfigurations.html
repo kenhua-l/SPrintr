@@ -77,16 +77,26 @@
 </div>
 
 <script>
-  function displayPrintPreview() {
-    var orientation = $('input[name="orientation"]:checked').attr('id');
-    // console.log("orientation:", orientation);
-    var doubleSided = $('input[name="doubleSided"]:checked').val();
-    // console.log("doubleSided:", doubleSided);
-    var flipOn = $('input[name="flipOn"]:checked').attr('id');
-    // console.log("flipOn", flipOn);;
+  var page = "all";
+  var orientation = "portrait";
+  var flipOn = "longEdge";
+  var doubleSided = $('input[name="doubleSided"]:checked').val();
 
-    if(doubleSided) {
-      if(orientation == "portrait" && flipOn == "longEdge") {
+  function displayPrintPreview() {
+    console.log("doubleSided:", doubleSided);
+    console.log("Page: ", page);
+    console.log("Orientation: ", orientation);
+    console.log("Flip On: ", flipOn);
+
+    if (doubleSided == undefined) {
+      console.log("not double sided");
+      if (orientation == "portrait") {
+        $("#preview-image").attr("src","assets/Portrait.png");
+      } else if (orientation == "landscape"){
+        $("#preview-image").attr("src","assets/Landscape.png");
+      }
+    } else {
+      if (orientation == "portrait" && flipOn == "longEdge") {
         $("#preview-image").attr("src","assets/Portrait Long Edge.png");
       }
       else if(orientation == "portrait" && flipOn == "shortEdge") {
@@ -97,15 +107,6 @@
       }
       else if(orientation == "landscape" && flipOn == "shortEdge") {
         $("#preview-image").attr("src","assets/Landscape Short Edge.png");
-      }
-    }
-    else {
-      console.log("not double sided");
-      if(orientation == "portrait") {
-        $("#preview-image").attr("src","assets/Portrait.png");
-      }
-      else {
-        $("#preview-image").attr("src","assets/Landscape.png");
       }
     }
   }
@@ -130,46 +131,50 @@
   };
 
   $('input:checkbox[name=doubleSided]').change(function() {
-    displayPrintPreview();
-  });
-
-  $('input:radio[name=orientation]').change(function() {
-    displayPrintPreview();
-  });
-
-  $('input:radio[name=flipOn]').change(function() {
+    doubleSided = $('input[name="doubleSided"]:checked').val();
     displayPrintPreview();
   });
 
   // JQuery to be able to toggle the print configuration buttons
   $('.page-btn-one').on('click', function() {
     $('.page-btn-background-two').removeClass('page-btn-background-two').addClass('page-btn-background-one');
+    page = "all";
+    displayPrintPreview();
   });
 
   $('.page-btn-two').on('click', function() {
     $('.page-btn-background-one').removeClass('page-btn-background-one').addClass('page-btn-background-two');
+    page = "custom";
+    displayPrintPreview();
   });
 
   $('.orientation-btn-one').on('click', function() {
     $('.orientation-btn-background-two').removeClass('orientation-btn-background-two').addClass('orientation-btn-background-one');
+    orientation = "portrait";
+    displayPrintPreview();
   });
 
   $('.orientation-btn-two').on('click', function() {
     $('.orientation-btn-background-one').removeClass('orientation-btn-background-one').addClass('orientation-btn-background-two');
+    orientation = "landscape";
+    displayPrintPreview()
   });
 
   $('.flipOn-btn-one').on('click', function() {
     $('.flipOn-btn-background-two').removeClass('flipOn-btn-background-two').addClass('flipOn-btn-background-one');
+    flipOn = "longEdge";
+    displayPrintPreview();
   });
 
   $('.flipOn-btn-two').on('click', function() {
     $('.flipOn-btn-background-one').removeClass('flipOn-btn-background-one').addClass('flipOn-btn-background-two');
+    flipOn = "shortEdge";
+    displayPrintPreview();
   });
 
   $('.psts').on('click', function() {
     $('.print-btn').prop('disabled', false);
   })
-
 
   rangeSlider();
 </script>
