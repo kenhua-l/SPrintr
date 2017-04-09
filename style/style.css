@@ -1,5 +1,6 @@
 body {
   background-color: #4E93E3;
+  font-family: 'Raleway', sans-serif;
 }
 
 .navbar-default {
@@ -17,6 +18,16 @@ body {
   color: #FCFDFC;
   margin: 0px 20px;
   font-family: 'Raleway', sans-serif;
+}
+
+.navbar-default .navbar-nav li span {
+  display: block;
+  width: calc(100% - 65px);
+  height: 1px;
+  background: #FCFCFD;
+  position: absolute;
+  left: 33px;
+  top: 40px
 }
 
 .login-background {
@@ -133,7 +144,7 @@ body {
   display: block;
 }
 
-.wizard {
+.main-card {
   max-width: 1000px;
   min-height: 650px;
   margin: 0px auto 40px auto;
@@ -146,6 +157,19 @@ body {
   -webkit-box-shadow: 0px 18px 25px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 18px 25px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 18px 25px 0px rgba(0,0,0,0.75);
+}
+
+.main-card h1 {
+  text-align: center;
+}
+
+.main-card table {
+  max-width: 850px;
+  margin: 0px auto;
+}
+
+.print-jobs-container {
+  padding: 0px 40px;
 }
 
 .wizard .nav-tabs {
