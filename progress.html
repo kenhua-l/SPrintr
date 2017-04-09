@@ -45,22 +45,26 @@
       <form role="form">
           <div class="tab-content">
               <div class="tab-pane active" role="tabpanel" id="step1">
-                <div>
-                  <button type="button" class="btn btn-primary next-step pull-right upload-complete" disabled="disabled">Next</button>
+                <div class="row buttons-panel">
+                  <button type="button" class="next-step upload-complete" disabled="disabled">Next</button>
+                </div>
+                <div class="row">
                   <div id="upload"></div>
                 </div>
               </div>
 
               <div class="tab-pane" role="tabpanel" id="step2">
-                <div id="printConfigurations"></div>
-                <div class="row">
+                <div class="row buttons-panel">
                   <button type="button" class="btn btn-default prev-step">Previous</button>
-                  <button type="button" class="btn btn-primary next-step">Save and continue</button>
+                  <button type="button" class="btn btn-primary next-step">Next</button>
+                </div>
+                <div class="row">
+                  <div id="printConfigurations"></div>
                 </div>
               </div>
 
               <div class="tab-pane" role="tabpanel" id="step3">
-                <div class="row print-panel">
+                <div class="row buttons-panel">
                     <button type="button" class="btn btn-default prev-step">Previous</button>
                     <button type="button" class="btn btn-primary btn-info-full next-step print-btn" disabled="disabled">Print</button>
                 </div>
