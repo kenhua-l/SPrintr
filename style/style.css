@@ -131,7 +131,7 @@ body {
 
 .wizard {
   max-width: 1000px;
-  margin: auto;
+  margin: 0px auto 40px auto;
   background: #fff;
   border: 4px solid #353F4F;
   /* shadows and rounded borders */
@@ -320,12 +320,12 @@ span.round-tab:hover {
 
 .printer-area {
   font-size: 30px;
-  padding: 0px 50px;
+  padding: 0px 70px;
   font-family: 'Raleway', sans-serif;
 }
 
 .printer-card-container {
-  padding: 0px 18px;
+  padding: 0px 40px;
   margin: 0px 0px 20px 0px;
 }
 
@@ -335,6 +335,13 @@ span.round-tab:hover {
   background-color: #3A4352;
   color: #E1DEE2;
   margin: 0px auto;
+  border-radius: 5px;
+}
+
+.printer-card p {
+  font-size: 20px;
+  margin-top: 25px;
+  text-align: center;
 }
 
 .printer-card img {
