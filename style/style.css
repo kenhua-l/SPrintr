@@ -632,7 +632,7 @@ input::-moz-focus-outer {
   margin: 0px auto 20px auto;
   display: inline-block;
   color: #353F4F;
-  background-color: #7C8C9A;
+  background-color: skyblue;
   width: 80px;
   height: 40px;
   border-radius: 5px;
@@ -643,7 +643,7 @@ input::-moz-focus-outer {
   margin: 0px auto 20px auto;
   display: inline-block;
   color: #353F4F;
-  background-color: #7C8C9A;
+  background-color: skyblue;
   width: 80px;
   height: 40px;
   border-radius: 5px;
