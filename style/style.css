@@ -358,7 +358,7 @@ span.round-tab:hover {
 }
 
 .print-preview-border {
-  border: 3px solid #353F4F;
+  border: 1px solid #353F4F;
   min-height: 375px;
 }
 
